@@ -75,15 +75,11 @@ export function AboutSection() {
               {/* Quick stats */}
               <div className="flex gap-8 pt-4">
                 <div>
-                  <div className="text-3xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">Model Accuracy</div>
-                </div>
-                <div>
                   <div className="text-3xl font-bold text-primary">2+</div>
                   <div className="text-sm text-muted-foreground">Major Projects</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary">1</div>
+                  <div className="text-3xl font-bold text-primary">2</div>
                   <div className="text-sm text-muted-foreground">Internship</div>
                 </div>
               </div>

@@ -8,8 +8,22 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react'
 const education = [
   {
     id: 1,
+    degree: 'university diploma of technology',
+    institution: 'ESTEE - Higher School of Technology of Essaouira',
+    location: 'Morocco',
+    period: '2023 - 2025',
+    description: 'Training program focused on data science and data-driven careers, covering software development, data collection, data management, processing, and data valorization. Aims to train IT and information processing technicians while providing practical experience through projects and internships in a professional environment.',
+    highlights: [
+      'Bases of IT & Programming',
+      'Machine Learning & Deep Learning',
+      'Statistical Analysis & Mathematics',
+      'Software Engineering Principles',
+    ],
+  },
+  {
+    id: 2,
     degree: 'Engineering Degree in Data Science & Artificial Intelligence',
-    institution: 'ENSIASD - National School of Applied Sciences',
+    institution: 'ENSIASD - National School of Artificial Intelligence and Digital Sciences | Taroudant',
     location: 'Morocco',
     period: 'Current',
     description: 'Comprehensive program covering machine learning, deep learning, data engineering, computer vision, and AI system design. Focus on practical applications and industry-relevant projects.',

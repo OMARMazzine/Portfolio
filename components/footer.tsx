@@ -81,9 +81,7 @@ export function Footer() {
             <p>
               © {currentYear} Omar Mazzine. All rights reserved.
             </p>
-            <p className="flex items-center gap-1">
-              Built with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> using Next.js & TailwindCSS
-            </p>
+           
           </motion.div>
         </div>
       </div>

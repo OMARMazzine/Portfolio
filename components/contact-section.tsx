@@ -178,7 +178,8 @@ export function ContactSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <h3 className="text-lg font-semibold text-foreground mb-6">
-                Send a Message
+                Send a Message  (Still in development, use contact info on the left
+                )
               </h3>
 
               {submitted ? (

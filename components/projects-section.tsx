@@ -21,10 +21,10 @@ const projects = [
     and dropout layers to prevent overfitting.`,
     technologies: ['TensorFlow', 'Keras', 'Python', 'OpenCV', 'CNN', 'NumPy', 'Matplotlib'],
     metrics: [
-      { label: 'Accuracy', value: '100%' },
-      { label: 'Precision', value: '100%' },
-      { label: 'Recall', value: '100%' },
-      { label: 'F1 Score', value: '100%' },
+      { label: 'Accuracy', value: '95%' },
+      { label: 'Precision', value: '95%' },
+      { label: 'Recall', value: '95%' },
+      { label: 'F1 Score', value: '95%' },
     ],
     features: [
       'Deep learning classification with CNN architecture',
@@ -34,12 +34,11 @@ const projects = [
       'Visualization of model predictions',
     ],
     category: 'Computer Vision',
-    github: 'https://github.com/OMARMazzine',
   },
   {
     id: 2,
     title: 'Industrial Logo Detection System',
-    description: 'A computer vision solution developed during an internship at Saint-Gobain focused on automated visual analysis and logo detection using OpenCV-based image processing techniques.',
+    description: 'Du to confidentiality I can\'t disclose the details of this project. \n A computer vision solution developed during an internship at Saint-Gobain focused on automated visual analysis and logo detection using OpenCV-based image processing techniques.',
     longDescription: `Developed a computer vision solution during an internship at Saint-Gobain focused on 
     automated visual analysis and logo detection. The system employs various image processing techniques 
     for industrial quality control applications.
@@ -80,17 +79,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           <Badge variant="secondary" className="text-xs">
             {project.category}
           </Badge>
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="View on GitHub"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-          )}
+          
         </div>
         
         <h3 className="text-xl font-bold text-foreground mb-3">
@@ -172,14 +161,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                   ))}
                 </ul>
               </div>
-              {project.github && (
-                <Button asChild variant="outline" size="sm" className="mt-2">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View on GitHub
-                  </a>
-                </Button>
-              )}
+             
             </div>
           </motion.div>
         )}

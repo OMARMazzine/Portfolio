@@ -8,18 +8,18 @@ const skillCategories = [
   {
     title: 'Programming',
     skills: [
-      { name: 'Python', level: 95 },
-      { name: 'SQL', level: 90 },
-      { name: 'JavaScript', level: 75 },
+      { name: 'Python'},
+      { name: 'SQL' },
+      { name: 'JavaScript' },
     ],
   },
   {
     title: 'AI / Machine Learning',
     skills: [
-      { name: 'TensorFlow', level: 90 },
-      { name: 'Keras', level: 90 },
-      { name: 'Scikit-learn', level: 85 },
-      { name: 'Deep Learning', level: 85 },
+      { name: 'TensorFlow'  },
+      { name: 'Keras'  },
+      { name: 'Scikit-learn' },
+      { name: 'Deep Learning'  },
     ],
   },
   {
@@ -56,25 +56,11 @@ const skillCategories = [
   },
 ]
 
-function SkillBar({ name, level, delay }: { name: string; level: number; delay: number }) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-50px" })
 
+// Simple skill list item (no percentage)
+function SkillListItem({ name }: { name: string }) {
   return (
-    <div ref={ref} className="space-y-2">
-      <div className="flex justify-between items-center">
-        <span className="text-sm font-medium text-foreground">{name}</span>
-        <span className="text-xs text-muted-foreground">{level}%</span>
-      </div>
-      <div className="h-2 bg-secondary rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={isInView ? { width: `${level}%` } : { width: 0 }}
-          transition={{ duration: 1, delay, ease: "easeOut" }}
-          className="h-full bg-primary rounded-full"
-        />
-      </div>
-    </div>
+    <li className="text-sm font-medium text-foreground pl-2 list-disc">{name}</li>
   )
 }
 
@@ -117,14 +103,11 @@ export function SkillsSection() {
                   {category.title}
                 </h3>
                 <div className="space-y-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <SkillBar
-                      key={skill.name}
-                      name={skill.name}
-                      level={skill.level}
-                      delay={categoryIndex * 0.1 + skillIndex * 0.1}
-                    />
-                  ))}
+                  <ul className="space-y-2 ml-2">
+                    {category.skills.map((skill) => (
+                      <SkillListItem key={skill.name} name={skill.name} />
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}
