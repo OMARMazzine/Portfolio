@@ -34,6 +34,7 @@ const projects = [
       'Visualization of model predictions',
     ],
     category: 'Computer Vision',
+    github : 'https://github.com/OMARMazzine/trrafic_sign_recognition',
   },
   {
     id: 2,
@@ -79,6 +80,17 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           <Badge variant="secondary" className="text-xs">
             {project.category}
           </Badge>
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="View on GitHub"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+          )}
           
         </div>
         
@@ -161,7 +173,14 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                   ))}
                 </ul>
               </div>
-             
+             {project.github && (
+                <Button asChild variant="outline" size="sm" className="mt-2">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    View on GitHub
+                  </a>
+                </Button>
+              )}
             </div>
           </motion.div>
         )}
