@@ -6,22 +6,7 @@ import { useRef } from 'react'
 import { Briefcase, Calendar, MapPin, Building } from 'lucide-react'
 
 const experiences = [
-  {
-    id: 1,
-    title: 'Software Engineer Intern',
-    company: 'Provaince of Essaouira',
-    location: 'Province of Essaouira, Morocco',
-    period: 'July 2024 - August 2024',
-    description: 'Developed web-based solutions for local government services, focusing on improving accessibility and user experience for administrators.',
-    responsibilities: [
-      'facilitated the navigation between chauffeurs and cars for administrative tasks',
-      'Implemented user-friendly interfaces for administrative tasks',
-      'Optimized web applications for performance and scalability',
-      'Ensured accessibility standards were met for all users',
-      'automatic availability checking for chauffeurs and cars',
-    ],
-    technologies: ['Django', 'Python', 'SQLite'],
-  },
+  
   {
     id: 2,
     title: 'Computer Vision Intern',
@@ -37,6 +22,22 @@ const experiences = [
       'Collaborated with industrial teams on visual inspection systems',
     ],
     technologies: ['OpenCV', 'Python', 'SSIM', 'Pyzbar', 'Computer Vision'],
+  },
+  {
+    id: 1,
+    title: 'Software Engineer Intern',
+    company: 'Provaince of Essaouira',
+    location: 'Province of Essaouira, Morocco',
+    period: 'July 2024 - August 2024',
+    description: 'Developed web-based solutions for local government services, focusing on improving accessibility and user experience for administrators.',
+    responsibilities: [
+      'facilitated the navigation between chauffeurs and cars for administrative tasks',
+      'Implemented user-friendly interfaces for administrative tasks',
+      'Optimized web applications for performance and scalability',
+      'Ensured accessibility standards were met for all users',
+      'automatic availability checking for chauffeurs and cars',
+    ],
+    technologies: ['Django', 'Python', 'SQLite'],
   },
 ]
 
