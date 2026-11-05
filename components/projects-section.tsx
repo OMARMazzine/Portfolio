@@ -59,6 +59,48 @@ const projects = [
     category: 'Industrial CV',
     github: null,
   },
+  {
+  id: 3,
+  title: 'CardioScope – Heart Disease Risk Assessment',
+  description:
+    'An AI-powered web application that estimates cardiovascular disease risk using machine learning. Developed an end-to-end prediction pipeline and an interactive Streamlit interface to help users understand cardiovascular risk factors and model predictions.',
+  longDescription: `CardioScope is a machine learning project developed during my AI Engineering internship at YaneCode Digital.
+
+  The project uses the Framingham Heart Study dataset, containing 4,240 records, to develop a cardiovascular disease risk prediction model based on 14 clinical and demographic features.
+
+  The machine learning pipeline includes data preprocessing, exploratory data analysis, feature preparation, and class imbalance handling using SMOTE applied exclusively to the training data.
+
+  An XGBoost classifier was selected and evaluated using Recall, F1-score, and ROC-AUC to better assess its ability to identify potential high-risk cases.
+
+  The final model was integrated into an interactive Streamlit application featuring conversational-style data collection, risk estimation, result interpretation, and cardiovascular health information.
+
+  The application was deployed using Streamlit Community Cloud.`,
+  technologies: [
+    'Python',
+    'XGBoost',
+    'Scikit-learn',
+    'Pandas',
+    'NumPy',
+    'SMOTE',
+    'Streamlit',
+    'Machine Learning',
+  ],
+  metrics: null,
+  features: [
+    'End-to-end machine learning prediction pipeline',
+    'Framingham Heart Study dataset (4,240 records)',
+    '14 clinical and demographic input features',
+    'XGBoost classification model',
+    'Class imbalance handling using SMOTE',
+    'Model evaluation using Recall, F1-score, and ROC-AUC',
+    'Interactive conversational-style user interface',
+    'Cardiovascular risk interpretation and educational information',
+    'Cloud deployment using Streamlit Community Cloud',
+  ],
+  category: 'AI & Machine Learning',
+  github: 'https://github.com/OMARMazzine/Heart-Disease-Prediction',
+  liveDemo: 'https://cardio-scope.streamlit.app',
+},
 ]
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
