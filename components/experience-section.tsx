@@ -11,7 +11,7 @@ const experiences = [
     title: 'Software Engineer Intern',
     company: 'Provaince of Essaouira',
     location: 'Province of Essaouira, Morocco',
-    period: 'April 2025 - June 2025',
+    period: 'July 2024 - August 2024',
     description: 'Developed web-based solutions for local government services, focusing on improving accessibility and user experience for administrators.',
     responsibilities: [
       'facilitated the navigation between chauffeurs and cars for administrative tasks',
