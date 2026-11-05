@@ -6,6 +6,34 @@ import { useRef } from 'react'
 import { Briefcase, Calendar, MapPin, Building } from 'lucide-react'
 
 const experiences = [
+  {
+    id: 3,
+    title: 'AI Engineer Intern',
+    company: 'YaneCode Digital',
+    location: 'Hybrid',
+    period: 'July 2026 - August 2026',
+    description:
+      'Designed and developed CardioScope, an AI-powered heart disease risk assessment application, combining machine learning, data preprocessing, model evaluation, and interactive deployment.',
+    responsibilities: [
+      'Developed an end-to-end machine learning pipeline for cardiovascular disease risk prediction',
+      'Performed data preprocessing, feature engineering, and exploratory data analysis on the Framingham Heart Study dataset',
+      'Trained and optimized an XGBoost classification model',
+      'Applied SMOTE on training data to address class imbalance',
+      'Evaluated model performance using Recall, F1-score, and ROC-AUC',
+      'Built an interactive Streamlit application for risk assessment and result interpretation',
+      'Deployed the application using Streamlit Community Cloud',
+    ],
+    technologies: [
+      'Python',
+      'Scikit-learn',
+      'XGBoost',
+      'Pandas',
+      'NumPy',
+      'SMOTE',
+      'Streamlit',
+      'Machine Learning',
+    ],
+  },
   
   {
     id: 2,
